@@ -17,7 +17,7 @@ mex project_obs_UV.c
 
 The main file in the `solver` folder for running the In-Face Extended Frank-Wolfe Method is `InFace_Extended_FW_sparse.m`. The syntax for calling this function is:
 ```
-[Zk, history, dynamic_info] = InFace_Extended_FW_sparse(mat_comp_instance, alt_fun, update_representation, options, start_params)
+[Zk, history] = InFace_Extended_FW_sparse(mat_comp_instance, alt_fun, update_representation, options, start_params)
 ```
 The file `InFace_Extended_FW_sparse.m` contains documentation describing the various arguments and outputs to this function. As noted in the file, this function requires inputting a handle to a function `alt_fun` for computing the alternative direction and a handle to a function `update_representation` for updating the iterate representation (either an SVD or an overcomplete basis) after moving in a direction. We have provided several implementations for these functions, as described below.
 
