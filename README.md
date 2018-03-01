@@ -2,7 +2,7 @@
 
 Code associated with the [paper](http://epubs.siam.org/doi/abs/10.1137/15M104726X):
 
->An Extended Frank-Wolfe Method with “In-Face” Directions, and its Application to Low-Rank Matrix Completion, with Robert M. Freund and Rahul Mazumder, SIAM Journal on Optimization 27 (1), pp. 319-346, 2017.
+> *An Extended Frank-Wolfe Method with “In-Face” Directions, and its Application to Low-Rank Matrix Completion*, by Robert M. Freund, Paul Grigas, and Rahul Mazumder, SIAM Journal on Optimization 27 (1), pp. 319-346, 2017.
 
 ## Overview
 
