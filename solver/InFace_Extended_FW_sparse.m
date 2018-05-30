@@ -1,4 +1,4 @@
-function [Zk, history] = InFace_Extended_FW_sparse(mat_comp_instance, alt_fun, update_representation, options, start_params)
+function [Zk, history, dynamic_info] = InFace_Extended_FW_sparse(mat_comp_instance, alt_fun, update_representation, options, start_params)
 % Implements In Face Extended Frank-Wolfe (Algorithm 3)
 % Variables are stored and manipulated in a sparse/low-rank manner, appropriate for large-scale problems
 %
@@ -653,5 +653,10 @@ for iter = 2:(options.max_iter + 1)
         fprintf('Current Iteration: %d\n', iter);
     end
 end
+
+dynamic_info = struct();
+dynamic_info.lowerbnd = lowerbnd;
+dynamic_info.lowerbnd_sv = lowerbnd_sv;
+dynamic_info.warm_start = options.svd_options.warm_start;
 
 end
