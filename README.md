@@ -15,6 +15,11 @@ Before anything else be sure to install the mex file:
 mex project_obs_UV.c
 ```
 
+You may also need to set:
+```
+warning('error', 'MATLAB:eigs:NoEigsConverged');
+```
+
 The main file in the `solver` folder for running the In-Face Extended Frank-Wolfe Method is `InFace_Extended_FW_sparse.m`. The syntax for calling this function is:
 ```
 [Zk, history] = InFace_Extended_FW_sparse(mat_comp_instance, alt_fun, update_representation, options, start_params)
